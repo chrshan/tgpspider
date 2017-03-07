@@ -156,22 +156,7 @@ class RoleSpider(scrapy.Spider):
                             '&ZoneIDMerge=' + str(ZoneIDMerge),
                             # 你的QQ登陆后返回的cookie
                             cookies={
-                                'RK': '5HurjGRaXt',
-                                'pgv_pvi': '7687267328',
-                                'tgp_newFlag': '497456022%3A',
-                                'eas_sid': 'z1H4h8Z4R6F5n2k7r0p9r7T5W1',
-                                'pkey': '000158B4431400706B573CD68EE42F48A1DC251BC5E4ABACE6E70195372F334BA52BAE72744E83881A3AAF1B2839319A3A1B1EB79F58F2E03A4DCF13CF537574B46EE1ED8D2A23F74588B41919657A5C4903BD68ECE6A07043E8C640C2B6B56C93E5731D99F402C5B3E0834BEA16B83C1B50556DD1633333',
-                                'pgv_si': 's21011456',
-                                'session_token': 'prk+mjulBpqNUa1TTymivmhwuvHgUwQrr/p//qyR6Zo=',
-                                'pt2gguin': 'o0497456022',
-                                'uin': 'o0497456022',
-                                'skey': '@SeUnivUgG',
-                                'ptisp': 'ctc',
-                                'ptcz': '09cfef3c01466fc0c6c94b3d2ba94293e14ed07a870fcac5cd63f88ed7825bef',
-                                'puin': '497456022',
-                                'paid': '29',
-                                'pgv_info': 'ssid=s6522609848',
-                                'pgv_pvid': '2758795718'
+                                #your cookies
                             },
                             callback=self.parse_role,)
 
