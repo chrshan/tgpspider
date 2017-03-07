@@ -33,7 +33,6 @@ class TgpspiderPipeline(object):
                 'LastPlayTi': item['LastPlayTime']
             }
             self.tdb['role'].insert(items)
-            return items
         elif spider.name == 'roledetail':
             role_detail = RoleDetail()
             role_detail['Uin'] = item['Uin']
@@ -45,7 +44,6 @@ class TgpspiderPipeline(object):
             role_detail['FightingCapacityDetailsExt'] = item[
                 'FightingCapacityDetailsExt']
             self.tdb['roledetail'].insert(role_detail)
-            return role_detail
         elif spider.name == 'roleitem':
             self.tdb['roleitem'].insert(item)
         elif spider.name == 'roleequip':
@@ -54,4 +52,5 @@ class TgpspiderPipeline(object):
             self.tdb['rolesnap'].insert(item)
         elif spider.name == 'roleskill':
             self.tdb['roleskill'].insert(item)
-            return item
+        elif spider.name == 'roleproptable':
+            self.tdb['roleproptable'].insert(item)
